@@ -120,3 +120,4 @@ This project is open source and available under the MIT License.
 - Bitcoin data provided by [Mempool.space](https://mempool.space)
 - Price data provided by [CoinGecko](https://www.coingecko.com)
 - Built with [Next.js](https://nextjs.org)
+
