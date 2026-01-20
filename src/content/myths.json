@@ -1,0 +1,214 @@
+{
+  "myths": [
+    {
+      "id": "addresses-are-identities",
+      "title": "Bitcoin addresses are identities",
+      "myth": "Each Bitcoin address represents a person or entity, so you can track who owns what.",
+      "reality": "Addresses are not identities. A single person can have many addresses, and addresses can be shared. The blockchain shows transaction flows, but it doesn't reveal who controls each address. Privacy comes from using new addresses for each transaction.",
+      "category": "privacy"
+    },
+    {
+      "id": "bitcoin-is-anonymous",
+      "title": "Bitcoin is completely anonymous",
+      "myth": "Bitcoin transactions are anonymous and untraceable.",
+      "reality": "Bitcoin is pseudonymous, not anonymous. All transactions are public on the blockchain. While addresses don't directly reveal identities, sophisticated analysis can link addresses together. True privacy requires additional techniques like coin mixing or privacy-focused protocols.",
+      "category": "privacy"
+    },
+    {
+      "id": "fees-are-percentage",
+      "title": "Transaction fees are a percentage of the amount",
+      "myth": "You pay a percentage fee based on how much Bitcoin you're sending.",
+      "reality": "Fees are based on transaction size (in bytes), not the amount being sent. Sending 0.001 BTC costs the same as sending 100 BTC if the transaction size is the same. Fees are measured in satoshis per virtual byte (sat/vB).",
+      "category": "fees"
+    },
+    {
+      "id": "change-is-lost",
+      "title": "Change is lost or wasted",
+      "myth": "When you send Bitcoin and get change back, that change is lost or wasted.",
+      "reality": "Change is sent back to an address you control as a new UTXO. It's not lost - it's yours to spend later. Change happens because UTXOs must be fully spent, so if you want to send less than a UTXO's value, the difference comes back as change.",
+      "category": "utxo"
+    },
+    {
+      "id": "confirmations-instant",
+      "title": "One confirmation is enough for all transactions",
+      "myth": "Once a transaction has one confirmation, it's final and irreversible.",
+      "reality": "While one confirmation makes a transaction very likely to be permanent, more confirmations increase security. For small amounts, 1-3 confirmations may be sufficient. For large amounts, 6+ confirmations are recommended. Each confirmation makes reversal exponentially less likely.",
+      "category": "confirmations"
+    },
+    {
+      "id": "mempool-is-slow",
+      "title": "The mempool is slow or inefficient",
+      "myth": "Transactions waiting in the mempool are stuck or delayed unnecessarily.",
+      "reality": "The mempool is a normal part of Bitcoin's operation. Transactions wait there until miners include them in blocks. Higher fees generally result in faster inclusion. The mempool ensures transactions are broadcast to the network before confirmation.",
+      "category": "network"
+    },
+    {
+      "id": "bitcoin-is-digital-gold",
+      "title": "Bitcoin is just digital gold",
+      "myth": "Bitcoin is only a store of value, like digital gold.",
+      "reality": "While Bitcoin can function as a store of value, it's also a payment system. Bitcoin enables peer-to-peer transactions without intermediaries. Its programmability and global reach make it more than just 'digital gold' - it's programmable money.",
+      "category": "philosophy"
+    },
+    {
+      "id": "miners-control-bitcoin",
+      "title": "Miners control Bitcoin",
+      "myth": "Miners have control over Bitcoin and can manipulate transactions or the network.",
+      "reality": "Miners validate and order transactions, but they don't control Bitcoin. The network is decentralized, and miners compete with each other. Users can choose which transactions to accept, and the protocol is enforced by all nodes. No single miner or group can control Bitcoin.",
+      "category": "governance"
+    },
+    {
+      "id": "bitcoin-uses-too-much-energy",
+      "title": "Bitcoin uses too much energy",
+      "myth": "Bitcoin's energy consumption is wasteful and unsustainable.",
+      "reality": "Bitcoin's energy use secures a global payment network that operates 24/7 without intermediaries. Many miners use renewable energy, and Bitcoin's energy use is transparent and measurable. The security provided by proof-of-work is what makes Bitcoin decentralized and trustless.",
+      "category": "energy"
+    },
+    {
+      "id": "small-amounts-expensive",
+      "title": "You can't send small amounts due to fees",
+      "myth": "Transaction fees make it impossible to send small amounts of Bitcoin.",
+      "reality": "While fees can be significant during high network congestion, Bitcoin fees are typically low for regular transactions. The Lightning Network enables instant, low-fee micropayments. Fees are based on transaction size, not amount, so small payments can still be economical.",
+      "category": "fees"
+    },
+    {
+      "id": "blockchain-is-a-database",
+      "title": "The blockchain is just a database",
+      "myth": "The blockchain is simply a database that stores transactions.",
+      "reality": "While the blockchain stores data, it's fundamentally different from a traditional database. It's a distributed, immutable ledger maintained by thousands of independent nodes. No single entity controls it, and once data is recorded, it cannot be altered without consensus from the network. This decentralization and immutability make it revolutionary.",
+      "category": "blockchain"
+    },
+    {
+      "id": "blockchain-can-be-hacked",
+      "title": "The blockchain can be hacked",
+      "myth": "Hackers can break into the blockchain and steal Bitcoin or alter transactions.",
+      "reality": "The Bitcoin blockchain itself has never been hacked. Its security comes from cryptographic hashing, proof-of-work, and decentralization. To alter the blockchain, an attacker would need to control over 51% of the network's mining power, which is economically infeasible. Individual wallets or exchanges can be compromised, but the blockchain itself remains secure.",
+      "category": "blockchain"
+    },
+    {
+      "id": "mining-is-solved-puzzles",
+      "title": "Mining is just solving puzzles",
+      "myth": "Mining is simply solving mathematical puzzles for fun or profit.",
+      "reality": "Mining serves a critical security function. Miners validate transactions, prevent double-spending, and secure the network through proof-of-work. The 'puzzle' (finding a valid hash) is designed to be computationally expensive, making attacks costly. Mining is essential infrastructure that keeps Bitcoin decentralized and secure.",
+      "category": "mining"
+    },
+    {
+      "id": "mining-creates-bitcoin-out-of-nothing",
+      "title": "Mining creates Bitcoin out of nothing",
+      "myth": "Miners just create new Bitcoin from nothing, which is unfair or inflationary.",
+      "reality": "Mining creates new Bitcoin through a predetermined, transparent schedule. The block reward started at 50 BTC and halves every 210,000 blocks (approximately 4 years). This creates a fixed supply cap of 21 million Bitcoin. The reward compensates miners for securing the network and will eventually be replaced entirely by transaction fees.",
+      "category": "mining"
+    },
+    {
+      "id": "mining-is-centralized",
+      "title": "Mining is centralized in China or by large pools",
+      "myth": "Bitcoin mining is controlled by a few large entities, making it centralized.",
+      "reality": "While mining pools exist, they don't control Bitcoin. Mining pools coordinate hash power but individual miners can switch pools at any time. The network is distributed globally, and no single entity can control it. Even if a pool had 51% of hash power, it would be economically irrational to attack the network that provides their income.",
+      "category": "mining"
+    },
+    {
+      "id": "blockchain-is-slow",
+      "title": "The blockchain is too slow for real-world use",
+      "myth": "Bitcoin's 10-minute block time makes it too slow for practical transactions.",
+      "reality": "Bitcoin's 10-minute block time is a design choice for security and decentralization. For instant payments, the Lightning Network enables near-instant transactions with low fees. The base layer prioritizes security and decentralization over speed, while layer 2 solutions provide speed when needed.",
+      "category": "blockchain"
+    },
+    {
+      "id": "blockchain-stores-all-data",
+      "title": "The blockchain stores all transaction data forever",
+      "myth": "The blockchain stores complete transaction details forever, making it bloated.",
+      "reality": "The blockchain stores transaction data, but it's efficiently structured. Pruned nodes can operate with only recent blocks. The blockchain grows predictably (about 1 MB per block, every 10 minutes), and storage costs decrease over time. The permanent record provides security and auditability that traditional systems cannot match.",
+      "category": "blockchain"
+    },
+    {
+      "id": "mining-will-stop",
+      "title": "Mining will stop when all Bitcoin is mined",
+      "myth": "Once all 21 million Bitcoin are mined (around 2140), mining will stop and the network will fail.",
+      "reality": "Mining will continue after all Bitcoin are mined. Miners will be compensated entirely by transaction fees. The network's security doesn't depend on block rewards - it depends on the cost of attacking the network versus the value secured. Transaction fees will provide sufficient incentive for miners to continue securing the network.",
+      "category": "mining"
+    },
+    {
+      "id": "blockchain-is-bitcoin",
+      "title": "Blockchain and Bitcoin are the same thing",
+      "myth": "Blockchain technology is the same as Bitcoin, or Bitcoin is the only blockchain.",
+      "reality": "Bitcoin was the first successful blockchain implementation, but blockchain is a broader technology. Bitcoin uses blockchain as its underlying data structure, but blockchain can be used for many other purposes. Bitcoin's specific implementation (proof-of-work, decentralized, permissionless) is what makes it unique and valuable.",
+      "category": "blockchain"
+    },
+    {
+      "id": "supply-cap-can-change",
+      "title": "The 21 million supply cap can be changed",
+      "myth": "The 21 million Bitcoin limit can be increased if miners or developers decide to change it.",
+      "reality": "The 21 million supply cap is hardcoded into Bitcoin's protocol and cannot be changed without overwhelming network consensus. Such a change would require coordination from nodes, miners, exchanges, and users worldwide - effectively impossible. The fixed supply is a core feature that creates Bitcoin's scarcity and value proposition.",
+      "category": "economics"
+    },
+    {
+      "id": "hardware-wallet-is-bitcoin",
+      "title": "Hardware wallets store Bitcoin",
+      "myth": "Hardware wallets physically store your Bitcoin coins.",
+      "reality": "Hardware wallets don't store Bitcoin - Bitcoin exists only on the blockchain. Hardware wallets store your private keys, which are needed to spend your Bitcoin. Your Bitcoin balance is recorded on the blockchain, and the hardware wallet provides secure access to spend it. If you lose your hardware wallet but have your seed phrase, you can recover access to your Bitcoin.",
+      "category": "security"
+    },
+    {
+      "id": "satoshi-is-known",
+      "title": "We know who Satoshi Nakamoto is",
+      "myth": "Satoshi Nakamoto's identity has been revealed or is known.",
+      "reality": "Satoshi Nakamoto's true identity remains unknown. Despite numerous claims and investigations, no one has definitively proven who created Bitcoin. Satoshi disappeared in 2011, leaving Bitcoin to develop organically. This anonymity protects Bitcoin from being associated with any single person or entity, maintaining its decentralized nature.",
+      "category": "history"
+    },
+    {
+      "id": "bitcoin-is-new",
+      "title": "Bitcoin is a new technology",
+      "myth": "Bitcoin was invented recently and is untested technology.",
+      "reality": "Bitcoin has been operational since 2009 - over 15 years of continuous operation. It combines decades-old cryptographic techniques (hash functions, digital signatures) with novel consensus mechanisms. The network has processed trillions of dollars in transactions and proven its resilience through market crashes, regulatory challenges, and technical attacks.",
+      "category": "history"
+    },
+    {
+      "id": "halving-causes-price-increase",
+      "title": "Halving always causes Bitcoin price to increase",
+      "myth": "Every halving event guarantees that Bitcoin's price will go up.",
+      "reality": "While halvings reduce the supply of new Bitcoin entering circulation, they don't guarantee price increases. Price is determined by supply and demand. Historical halvings have been followed by bull markets, but correlation doesn't equal causation. Many factors influence Bitcoin's price, including adoption, regulation, and market sentiment.",
+      "category": "economics"
+    },
+    {
+      "id": "all-bitcoin-lost",
+      "title": "Lost Bitcoin are gone forever",
+      "myth": "When Bitcoin are lost (forgotten keys, etc.), they're destroyed and removed from circulation.",
+      "reality": "Lost Bitcoin remain on the blockchain forever but become permanently unspendable. They're not destroyed - they're effectively removed from the circulating supply, making remaining Bitcoin more scarce. Estimates suggest millions of Bitcoin may be permanently lost, effectively reducing the usable supply below 21 million.",
+      "category": "economics"
+    },
+    {
+      "id": "protocol-can-be-updated",
+      "title": "Bitcoin's protocol can be easily updated",
+      "myth": "Developers can update Bitcoin's protocol whenever they want to add new features.",
+      "reality": "Bitcoin's protocol is extremely difficult to change. Updates require overwhelming consensus from nodes, miners, exchanges, and users. Most changes are rejected if they don't have near-universal support. This rigidity is intentional - it ensures Bitcoin remains predictable and resistant to arbitrary modifications. Major upgrades like SegWit took years to achieve consensus.",
+      "category": "governance"
+    },
+    {
+      "id": "exchanges-are-wallets",
+      "title": "Exchanges are the same as wallets",
+      "myth": "Keeping Bitcoin on an exchange is the same as using a wallet.",
+      "reality": "Exchanges and wallets serve different purposes. Exchanges are for trading - when you keep Bitcoin on an exchange, the exchange controls your private keys (custodial). Wallets give you control of your private keys (non-custodial). The saying 'not your keys, not your coins' means if you don't control the private keys, you don't truly own the Bitcoin. For security, transfer Bitcoin from exchanges to your own wallet.",
+      "category": "security"
+    },
+    {
+      "id": "exchanges-are-safe",
+      "title": "Exchanges are completely safe",
+      "myth": "Large, reputable exchanges are 100% safe and can never lose your Bitcoin.",
+      "reality": "No exchange is 100% safe. Exchanges can be hacked, go bankrupt, be shut down by regulators, or have internal issues. History shows many exchange failures resulting in user losses. While reputable exchanges have better security, the safest practice is to only keep trading amounts on exchanges and store the rest in your own wallet (especially hardware wallets).",
+      "category": "security"
+    },
+    {
+      "id": "wallet-stores-bitcoin",
+      "title": "Wallets store Bitcoin",
+      "myth": "Your wallet physically stores your Bitcoin coins.",
+      "reality": "Wallets don't store Bitcoin - Bitcoin exists only on the blockchain. Wallets store your private keys, which are needed to access and spend your Bitcoin. Your Bitcoin balance is recorded on the blockchain at addresses derived from your public keys. If you lose your wallet but have your seed phrase, you can recover access because your Bitcoin is still on the blockchain.",
+      "category": "security"
+    },
+    {
+      "id": "seed-phrase-is-password",
+      "title": "Seed phrase is just a password",
+      "myth": "A seed phrase is like a password - you can change it if compromised.",
+      "reality": "A seed phrase is fundamentally different from a password. Your seed phrase generates all your private keys. If someone has your seed phrase, they have complete control over your Bitcoin forever. You cannot change a seed phrase - if compromised, you must move all Bitcoin to a new wallet with a new seed phrase. Treat seed phrases with extreme security.",
+      "category": "security"
+    }
+  ]
+}

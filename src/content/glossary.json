@@ -1,0 +1,162 @@
+{
+  "bitcoin": {
+    "term": "Bitcoin",
+    "definition": "A decentralized digital currency that enables peer-to-peer transactions without a central authority. Bitcoin uses cryptographic proof instead of trust, allowing any two parties to transact directly.",
+    "category": "concept"
+  },
+  "transaction": {
+    "term": "Transaction",
+    "definition": "A transfer of Bitcoin value from one or more addresses to one or more other addresses. Each transaction consumes inputs (UTXOs) and creates new outputs (UTXOs).",
+    "category": "concept"
+  },
+  "utxo": {
+    "term": "UTXO",
+    "definition": "Unspent Transaction Output. A UTXO is a discrete piece of Bitcoin that can be spent. When you receive Bitcoin, you receive a UTXO. When you spend Bitcoin, you consume UTXOs and create new ones.",
+    "category": "concept"
+  },
+  "input": {
+    "term": "Input",
+    "definition": "A reference to a previous transaction output (UTXO) that is being spent. Inputs consume existing UTXOs and must be fully spent (you cannot partially spend a UTXO).",
+    "category": "transaction"
+  },
+  "output": {
+    "term": "Output",
+    "definition": "A new UTXO created by a transaction. Outputs specify an amount in satoshis and a Bitcoin address. Outputs become spendable after the transaction is confirmed in a block.",
+    "category": "transaction"
+  },
+  "change": {
+    "term": "Change",
+    "definition": "The difference between the total value of inputs and the amount being sent. Since UTXOs must be fully spent, change is sent back to the sender's address as a new output.",
+    "category": "transaction"
+  },
+  "fee": {
+    "term": "Fee",
+    "definition": "The amount paid to miners to include a transaction in a block. Fees are calculated as: total inputs - total outputs. Higher fees generally result in faster confirmation.",
+    "category": "transaction"
+  },
+  "mempool": {
+    "term": "Mempool",
+    "definition": "The pool of unconfirmed transactions waiting to be included in a block. Transactions enter the mempool when broadcast to the network and leave when confirmed in a block.",
+    "category": "network"
+  },
+  "confirmation": {
+    "term": "Confirmation",
+    "definition": "A confirmation occurs when a transaction is included in a block. Each subsequent block adds another confirmation. More confirmations increase the security and finality of a transaction.",
+    "category": "network"
+  },
+  "block": {
+    "term": "Block",
+    "definition": "A collection of transactions grouped together and added to the blockchain. Blocks are created by miners approximately every 10 minutes and contain a cryptographic link to the previous block.",
+    "category": "network"
+  },
+  "blockchain": {
+    "term": "Blockchain",
+    "definition": "A distributed ledger that records all Bitcoin transactions in chronological order. Each block contains a hash of the previous block, creating an immutable chain. The blockchain is maintained by a network of nodes, ensuring decentralization and security.",
+    "category": "network"
+  },
+  "mining": {
+    "term": "Mining",
+    "definition": "The process of validating transactions and adding them to the blockchain. Miners compete to solve a cryptographic puzzle (proof-of-work) to create new blocks. Successful miners receive block rewards (newly created Bitcoin) and transaction fees.",
+    "category": "network"
+  },
+  "miner": {
+    "term": "Miner",
+    "definition": "A participant in the Bitcoin network who validates transactions and creates new blocks through the mining process. Miners use specialized hardware to solve cryptographic puzzles and are rewarded with Bitcoin for their work.",
+    "category": "network"
+  },
+  "proof-of-work": {
+    "term": "Proof-of-Work",
+    "definition": "A consensus mechanism that requires miners to solve a computationally difficult puzzle to create a block. This process secures the network by making it expensive to attack and ensures that no single entity can control the blockchain.",
+    "category": "network"
+  },
+  "block-reward": {
+    "term": "Block Reward",
+    "definition": "New Bitcoin created and given to miners when they successfully mine a block. The block reward started at 50 BTC and halves approximately every 4 years (currently 3.125 BTC as of 2024). This is how new Bitcoin enters circulation.",
+    "category": "network"
+  },
+  "difficulty": {
+    "term": "Difficulty",
+    "definition": "A measure of how hard it is to find a valid block hash. The difficulty adjusts every 2016 blocks (approximately every 2 weeks) to maintain an average block time of 10 minutes, regardless of the total mining power on the network.",
+    "category": "network"
+  },
+  "hash": {
+    "term": "Hash",
+    "definition": "A fixed-size output from a cryptographic function that uniquely represents input data. In Bitcoin, each block contains a hash of the previous block, creating an unbreakable chain. Changing any transaction would require recalculating all subsequent blocks.",
+    "category": "network"
+  },
+  "node": {
+    "term": "Node",
+    "definition": "A computer running Bitcoin software that maintains a copy of the blockchain and validates transactions. Full nodes download and verify every block and transaction, ensuring the network remains decentralized and secure.",
+    "category": "network"
+  },
+  "hardware-wallet": {
+    "term": "Hardware Wallet",
+    "definition": "A physical device that stores Bitcoin private keys offline. Hardware wallets provide enhanced security by keeping private keys isolated from internet-connected devices. They require physical confirmation to sign transactions, protecting against malware and online attacks.",
+    "category": "security"
+  },
+  "halving": {
+    "term": "Halving",
+    "definition": "An event that occurs approximately every 4 years (every 210,000 blocks) where the block reward is cut in half. The first halving reduced rewards from 50 BTC to 25 BTC, then to 12.5 BTC, 6.25 BTC, and currently 3.125 BTC. This creates a predictable, decreasing supply schedule.",
+    "category": "economics"
+  },
+  "supply-cap": {
+    "term": "Supply Cap",
+    "definition": "The maximum number of Bitcoin that will ever exist: 21 million. This hard limit is enforced by the protocol and cannot be changed without consensus from the entire network. As of 2024, approximately 19.7 million Bitcoin have been mined, with the final Bitcoin expected around 2140.",
+    "category": "economics"
+  },
+  "satoshi": {
+    "term": "Satoshi",
+    "definition": "The smallest unit of Bitcoin, named after Bitcoin's creator Satoshi Nakamoto. 1 Bitcoin = 100,000,000 satoshis. This allows for precise transactions even as Bitcoin's value increases.",
+    "category": "concept"
+  },
+  "genesis-block": {
+    "term": "Genesis Block",
+    "definition": "The first block in the Bitcoin blockchain, mined by Satoshi Nakamoto on January 3, 2009. Block height 0. This block contains a hidden message referencing a financial crisis headline, establishing Bitcoin's purpose as an alternative to traditional banking.",
+    "category": "history"
+  },
+  "private-key": {
+    "term": "Private Key",
+    "definition": "A secret number that allows Bitcoin to be spent. Private keys are used to create digital signatures that prove ownership of Bitcoin. Whoever controls the private key controls the Bitcoin. Private keys must be kept secret and secure.",
+    "category": "security"
+  },
+  "public-key": {
+    "term": "Public Key",
+    "definition": "A cryptographic key derived from a private key that can be shared publicly. Public keys are used to create Bitcoin addresses. While you can share your public key or address, you must never share your private key.",
+    "category": "security"
+  },
+  "protocol": {
+    "term": "Protocol",
+    "definition": "The set of rules that govern how Bitcoin works. The protocol defines block size, block time, difficulty adjustment, supply schedule, and transaction validation rules. Changes to the protocol require network-wide consensus, making Bitcoin resistant to arbitrary modifications.",
+    "category": "network"
+  },
+  "immutable": {
+    "term": "Immutable",
+    "definition": "Unable to be changed or altered. The Bitcoin blockchain is immutable - once a transaction is confirmed in a block, it cannot be reversed or modified. This immutability is enforced by cryptographic hashing and the distributed nature of the network.",
+    "category": "network"
+  },
+  "wallet": {
+    "term": "Wallet",
+    "definition": "A tool that stores Bitcoin private keys and allows interaction with the Bitcoin network. Wallets don't store Bitcoin itself - Bitcoin exists on the blockchain. Wallets store private keys needed to access and spend Bitcoin. Types include hardware wallets, software wallets, mobile wallets, and paper wallets.",
+    "category": "security"
+  },
+  "seed-phrase": {
+    "term": "Seed Phrase",
+    "definition": "A series of words (typically 12 or 24) that can regenerate all private keys in a wallet. Also called a recovery phrase or mnemonic. If you lose your wallet but have your seed phrase, you can recover access to your Bitcoin. Must be kept secret and secure - anyone with your seed phrase controls your Bitcoin.",
+    "category": "security"
+  },
+  "exchange": {
+    "term": "Exchange",
+    "definition": "A platform that allows buying, selling, or trading Bitcoin for fiat currency or other cryptocurrencies. Most exchanges are custodial, meaning they hold your Bitcoin in their wallets. Exchanges facilitate trading but require trust in the exchange operator. For security, many users transfer Bitcoin from exchanges to their own wallets.",
+    "category": "trading"
+  },
+  "custodial": {
+    "term": "Custodial",
+    "definition": "A service where a third party (like an exchange) holds and controls your Bitcoin. You don't control the private keys. The phrase 'not your keys, not your coins' refers to the risk of custodial services - if the service is hacked or closes, you may lose your Bitcoin.",
+    "category": "security"
+  },
+  "non-custodial": {
+    "term": "Non-Custodial",
+    "definition": "A service where you maintain control of your private keys. Non-custodial wallets and exchanges give you full control over your Bitcoin, but you're responsible for security. This follows Bitcoin's principle of self-custody.",
+    "category": "security"
+  }
+}
