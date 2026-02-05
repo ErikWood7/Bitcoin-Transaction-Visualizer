@@ -4,14 +4,14 @@ An educational web application for visualizing and understanding Bitcoin transac
 
 ## Features
 
-- 🔍 **Transaction Explorer**: Search and visualize Bitcoin transactions by TXID or address
-- 📊 **Interactive Graph**: Visualize transaction flow with a bipartite graph showing inputs, outputs, and relationships
-- 📚 **Educational Tour**: Guided tour through Bitcoin transaction concepts
-- 🎮 **Playground**: Build and simulate transactions to understand how they work
-- 📖 **Glossary**: Comprehensive glossary of Bitcoin terms with tooltips
-- 💡 **Myths & Facts**: Common Bitcoin misconceptions explained
-- 📈 **Live Price Ticker**: Real-time Bitcoin price with 24-hour chart
-- 🔒 **Security**: Rate limiting, input validation, and secure API handling
+- **Transaction Explorer**: Search and visualize Bitcoin transactions by TXID or address
+- **Interactive Graph**: Visualize transaction flow with a bipartite graph showing inputs, outputs, and relationships
+- **Educational Tour**: Guided tour through Bitcoin transaction concepts
+- **Playground**: Build and simulate transactions to understand how they work
+- **Glossary**: Comprehensive glossary of Bitcoin terms with tooltips
+- **Myths & Facts**: Common Bitcoin misconceptions explained
+- **Live Price Ticker**: Real-time Bitcoin price with 24-hour chart
+- **Security**: Rate limiting, input validation, and secure API handling
 
 ## Tech Stack
 
